@@ -1,0 +1,603 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('assets/fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('assets/fonts/Kanit-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    }
+    /* background: linear-gradient(
+        45deg,
+        #a3b5c0,  
+        #c5d3dc,  
+        #e6eef1,  
+        #b8c7d0,  
+        #9badb7   
+    );
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease-in-out infinite;
+}
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+        background-size: 400% 400%;
+    }
+    25% {
+        background-position: 100% 50%;
+        background-size: 200% 200%;
+    }
+    50% {
+        background-position: 50% 100%;
+        background-size: 300% 300%;
+    }
+    75% {
+        background-position: 0% 50%;
+        background-size: 200% 200%;
+    }
+    100% {
+        background-position: 0% 50%;
+        background-size: 400% 400%;
+    }
+} */
+.background-video {
+    z-index: -1;
+    object-fit: cover;
+}
+
+.main-container {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.header h1,
+.header span {
+
+    font-family: 'Kanit', sans-serif;
+    background-image: linear-gradient(45deg,
+
+            #5306f9 0%,
+            #5f73d3 25%,
+            #44b4ea 50%,
+            #2ac0c2 75%,
+            #5306f9 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap
+}
+.header h1{
+    font-size: 1.5rem !important;
+}
+.header span {
+    font-size: 1rem !important;
+}
+
+.box {
+    width: 90%;
+    height: 90%;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.375);
+    box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    position: relative;
+}
+.section-height {
+    height: 65vh !important;
+}
+
+.logo {
+    object-fit: cover;
+}
+
+.letter-spacing {
+    letter-spacing: 0.01rem;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu ul li a {
+    color: #124857;
+    text-decoration: none;
+}
+
+.menu ul li a.active {
+    background-image: linear-gradient(45deg, #5306f9 25%, #f906ac);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu ul li a:hover {
+    color: #333333;
+}
+
+.form-control:focus {
+    border-color: rgb(216, 129, 216) !important;
+    box-shadow: 0 1px 1px rgba(216, 129, 216, 0.075) inset !important;
+}
+.main-color{
+    color: #124857;
+}
+
+
+
+
+.logo {
+    position: relative;
+    z-index: 1;
+    display: block;
+}
+
+
+.btn-email {
+    padding: 0.5em 1.8em;
+    border: none;
+    outline: none;
+    color: #124857;
+    background: #d8d8d898;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-size: 1rem;
+}
+
+.btn-email:before {
+    content: "";
+    background: linear-gradient(45deg,
+       
+            #b334ba,
+            #ab30a9,
+            #1046b7,
+            #31aaea,
+            #3bc5b0,
+            #b334ba);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-btn-email 30s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+.btn-email:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #d3d3d3f4;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing-btn-email {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+
+
+/* For Tablets (iPad, iPad mini, etc.)
+   Screens between 768px and 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+    .header h1 {
+        font-size: 1.2rem !important;
+    }
+    .header span {
+        font-size: .9rem !important;
+    }
+    .fs-md-7{
+        font-size: .8rem !important;
+    }
+}
+
+/* For Large Mobile Phones (iPhone Plus, Samsung Galaxy, etc.)
+   Screens between 577px and 767px */
+@media (max-width: 767px) {
+    .menu ul li a {
+        font-size: 0.8rem !important;
+    }
+    .menu ul {
+        margin-top: 6%;
+    }
+    .box {
+        width: 95%;
+        height: 95%;
+        border-radius: 1.5rem;
+        margin: 0 auto;
+    }
+}
+
+/* For Small Mobile Phones (iPhone SE, smaller phones)
+   Screens smaller than 576px */
+@media (max-width: 576px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        padding: 5px;
+        
+    }
+
+    .logo {
+        
+        width: 45px;
+        height: auto;
+        margin-right: 10px;
+        flex: 0 0 auto;
+        width: 20%;
+    }
+    .logo-section{
+        width: 20%;
+    }
+    .menu-section{
+        width: 80%;
+        
+    }
+    
+    .menu {
+        flex: 1;
+        min-width: 0;
+        margin-left: 1%;
+    }
+    
+    .menu ul {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        /* gap: 4px; */
+    }
+    
+    .menu li {
+        list-style: none;
+    }
+    
+    .menu ul li a {
+        font-size: 0.5rem !important;
+        /* padding: 2% -2% !important; */
+        /* margin: 0 4%; */
+        white-space: nowrap;
+    }
+
+    .fs-sm-7 {
+        font-size: 0.6rem !important; /* 12px */
+    }
+
+    .btn-email {
+        padding: 0.3em 2em;
+        font-size: 0.8rem;
+        border-radius: 5px;
+    }
+}
+
+.purple-bottom-border {
+    border-bottom-color: rgba(128, 0, 128, 0.613) !important;
+    color: rgba(128, 0, 128, 0.613) !important;
+}
+
+/* Add styles for the placeholder text color */
+.purple-bottom-border::placeholder {
+    color: rgb(93, 92, 92) !important;
+}
+
+.contact-info a:hover {
+    color: #5306f9 !important; /* Replace with your desired color */
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    text-decoration: underline !important;
+}
+
+@media (min-width: 768px) {
+    .message-textarea {
+        rows: 4;
+    }
+}
+
+.contact-form-section {
+    margin-top: -2rem;
+}
+/* /////////product/////////
+ */
+.product-card {
+    background: rgba(186, 194, 234, 0.547);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    min-height: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.product-card .row {
+    height: 100%;
+    margin: 0;
+}
+
+.product-card .image-container {
+    height: 100%;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.product-card .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.odd-card .img-fluid {
+    clip-path: polygon(1% 0, 90% 0, 100% 100%, 0% 100%) !important;
+    -webkit-clip-path: polygon(1% 0, 90% 0, 100% 100%, 0% 100%) !important;
+}
+
+.even-card .img-fluid {
+    clip-path: polygon(11% 0, 100% 0, 100% 100%, 0% 100%) !important;
+    -webkit-clip-path: polygon(11% 0, 100% 0, 100% 100%, 0% 100%) !important;
+}
+
+.product-card .content-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.product-card .card-title{
+   
+    position: relative;
+    display: inline-block;
+}
+
+.product-card .card-title::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #4a50f7;
+    transition: width 0.8s ease;
+}
+
+.product-card:hover .card-title::after {
+    width: 100%;
+}
+
+.product-card .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.product-card:hover .image-container img {
+    transform: scale(1.1);
+}
+
+.fs-7 {
+    font-size: 0.875rem !important; /* 14px */
+}
+.fs-small{
+    font-size: 0.51rem !important;
+}
+.products-scroll {
+    max-height: 100%;
+    overflow-y: auto;
+    padding: 20px;
+    /* For Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: #5306f9 transparent;
+}
+
+/* For Chrome, Safari, and Opera */
+.products-scroll::-webkit-scrollbar {
+    width: 6px;
+}
+
+.products-scroll::-webkit-scrollbar-track {
+    background: rgba(128, 128, 128, 0.1);
+    border-radius: 4px;
+}
+
+.products-scroll::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(45deg, #f906ac 25%, #5306f9 100%);
+    border-radius: 10px;
+}
+
+.products-scroll::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(45deg, #f906ac 25%, #5306f9 100%);
+    opacity: 0.8;
+}
+
+/* Updated media queries for product card */
+@media (max-width: 1200px) {
+    /* .product-card .card-title {
+        
+    } */
+}
+
+@media (max-width: 991px) {
+    .product-card {
+        min-height: 250px;
+    }
+    .product-card .image-container {
+        clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);  /* Adjusted clip-path angle */
+    }
+}
+
+@media (max-width: 767px) {
+    .product-card {
+        margin-bottom: 20px;
+    }
+    .product-card .image-container {
+        height: 200px;  /* Fixed height for mobile */
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);  /* Remove diagonal clip on mobile */
+    }
+    /* .product-card .card-title {
+        font-size: 1.1rem;
+        margin-top: 1rem;
+    } */
+    .ink-image-position {
+        object-position: left top !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .product-card .image-container {
+        height: 180px;
+    }
+    
+}
+
+
+
+/* Add this media query for tablet views */
+@media (max-width: 991.98px) and (min-width: 768px) {
+    .product-card .image-container {
+   
+        clip-path: none;
+      
+        border-radius: none;
+       
+    } 
+}
+@media (max-width: 991.98px) {
+    .product-card .image-container {
+        height: 100%; /* make it fill vertically */
+    }
+
+    .product-card .image-container img {
+        height: 100%; /* ensure the image stretches too */
+        clip-path: none !important; /* remove shape */
+        border-radius: 0 !important; /* remove corners */
+    }
+}
+@media (max-width: 991.98px) {
+    .product-card .image-container {
+        height: 100%;
+    }
+
+    .product-card .image-container img {
+        height: 100%;
+        clip-path: none !important;
+        border-radius: 0 !important;
+    }
+}
+
+@media (max-width: 991.98px) {
+  .product-card .image-container {
+    height: 100%; /* stretch to fill */
+  }
+
+  .product-card .image-container img {
+    height: 100%;
+    object-fit: cover;
+    clip-path: none !important;
+    border-radius: 0 !important;
+    display: block;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .product-card .row {
+    align-items: stretch; /* Let both columns fill equal height */
+  }
+
+  .product-card .image-container {
+    height: 100%; /* was auto, set to 100% */
+  }
+
+  .product-card .image-container img {
+    height: 100%; /* ensure image fills container */
+    width: 100%;
+    object-fit: cover;
+    clip-path: none !important;
+    border-radius: 0 !important;
+    display: block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .product-card .row {
+    align-items: center; /* center both columns vertically */
+  }
+
+  .product-card .image-container {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0; /* optional spacing */
+  }
+
+  .product-card .image-container img {
+    height: auto;
+    max-height: 220px; /* control image size */
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    clip-path: none !important;
+    border-radius: 5px !important;
+  }
+}
+
+
+/* Card structure */
+
+
+
+.product-card .row {
+    flex: 1;
+    margin: 0;
+}
+
+
+
+/* Image styles */
+
+/* Column containing image */
+.product-card .col-md-4 {
+    padding: 0;  /* Remove bootstrap padding */
+    height: 100%;
+}
