@@ -27,7 +27,11 @@ The layout is fully responsive and includes:
 
 ## 📸 Screenshots
 
+![Image](https://github.com/user-attachments/assets/aef1a71a-2230-4a69-a301-1abeb8136b72)
 
+![Image](https://github.com/user-attachments/assets/cae85e41-2db7-459f-b436-51b332edc2e4)
+
+![Image](https://github.com/user-attachments/assets/ced69542-5b01-462d-8005-6c5407948fc3)
 
 ## 🔗 Live Demo
 
