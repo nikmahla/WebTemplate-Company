@@ -26,10 +26,12 @@ The layout is fully responsive and includes:
 - Custom media queries for image positioning and layout tweaks
 
 ## 📸 Screenshots
-
-![Image](https://github.com/user-attachments/assets/7bbce22d-cec4-4621-8b79-5adc498af393)
-![Image](https://github.com/user-attachments/assets/2c329f4c-082c-4e0f-b502-1ec71b2b54be)
-![Image](https://github.com/user-attachments/assets/46aed27f-0ad2-4d7f-b435-97dccdcddb46)
+### Mobile View
+![Mobile](https://github.com/user-attachments/assets/7bbce22d-cec4-4621-8b79-5adc498af393)
+![Mobile](https://github.com/user-attachments/assets/d2125a4c-f604-4059-b69b-3a99b8d3bb5f)
+### Desktop View
+![Desktop](https://github.com/user-attachments/assets/2c329f4c-082c-4e0f-b502-1ec71b2b54be)
+![Desktop](https://github.com/user-attachments/assets/46aed27f-0ad2-4d7f-b435-97dccdcddb46)
 
 ## 🔗 Live Demo
 
