@@ -17,13 +17,7 @@ The layout is fully responsive and includes:
 - Bootstrap 5
 - Custom media queries & animations
 - Icons via Bootstrap Icons
-- Vanilla JavaScript for scroll and UI interactivity
-
-## 📱 Responsive Design
-
-- **Mobile-first approach** with `flex-column` layout
-- `flex-md-row` kicks in at tablet and above
-- Custom media queries for image positioning and layout tweaks
+- JavaScript for scroll and UI interactivity
 
 ## 📸 Screenshots
 ### Mobile View
