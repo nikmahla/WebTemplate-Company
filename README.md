@@ -33,7 +33,7 @@ The layout is fully responsive and includes:
 
 ---
 
-Made with 💻 by [@nikmahla](https://github.com/nikmahla)
+Made with 💻 by [Fatemeh Nikookar](https://github.com/nikmahla)
 
  Created at August 2025
 
