@@ -592,7 +592,16 @@ body {
     margin: 0;
 }
 
-
+#home p,
+#home span {
+    font-size: 1.2rem !important; /* Adjust as needed */
+    line-height: 1.6 !important;
+}
+#about p,
+#about span {
+    font-size: 1.05rem !important; /* Adjust as needed */
+    line-height: 1.6 !important;
+}
 
 /* Image styles */
 
