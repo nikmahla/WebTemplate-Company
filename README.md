@@ -28,9 +28,8 @@ The layout is fully responsive and includes:
 ![Desktop](https://github.com/user-attachments/assets/46aed27f-0ad2-4d7f-b435-97dccdcddb46)
 
 ## 🔗 Live Demo
-
-(https://nikmahla.github.io/WebTemplate-Company/)
-
+[
+https://nikmahla.github.io/WebTemplate-Company/
 ---
 
 Made with 💻 by [Fatemeh Nikookar](https://github.com/nikmahla)
